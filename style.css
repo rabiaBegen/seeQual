@@ -103,18 +103,27 @@ nav a:hover {
     font-weight: bold;
 }
 
-.hero-image {
-    flex: 1;
-    max-width: 50%;
-    text-align: right;
-    margin-right: 0;
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    color: white;
+    text-align: center;
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0 0 0 14px;
-    display: block;
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%; 
+    z-index: 1; 
 }
 
 /* Animasyon tanımları */
